@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ name }}
+<table>
+    <th><tr><td>COLUM</td></tr></th>
+    <tbody>
+    {% if lista %}
+    {% for i in lista %}
+        <tr><td>{{ i }}</td></tr>
+    {% endfor %}
+        {% else %}
+        <tr><td>NO hay elementos que mostrar</td></tr>
+    {% endif %}
+    </tbody>
+</table>
+</body>
+</html>
